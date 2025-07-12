@@ -1,0 +1,206 @@
+/* Multi-API Chat Extension Styles */
+
+.multi-api-settings {
+    margin: 10px 0;
+}
+
+.multi-api-toggle-block {
+    margin: 15px 0;
+    padding: 10px;
+    background: var(--SmartThemeBlurTintColor);
+    border-radius: 5px;
+}
+
+.toggle-description {
+    font-size: 0.9em;
+    color: var(--SmartThemeEmColor);
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.multi-api-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--SmartThemeBlurTintColor);
+    border-radius: 5px;
+}
+
+.multi-api-section h4 {
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* API配置容器 */
+.api-config-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.api-config-item {
+    background: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+}
+
+.config-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.config-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.config-type {
+    font-size: 0.9em;
+    color: var(--SmartThemeEmColor);
+}
+
+.default-badge {
+    background: var(--SmartThemeQuoteColor);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.config-details {
+    font-size: 0.9em;
+    color: var(--SmartThemeEmColor);
+    margin-bottom: 10px;
+}
+
+.config-details div {
+    margin: 2px 0;
+}
+
+.config-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.config-actions button {
+    flex: 1;
+}
+
+/* 角色映射 */
+.character-mapping-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.character-mapping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--SmartThemeBodyColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+}
+
+.character-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.character_api_mapping {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 3px;
+    background: var(--SmartThemeBodyColor);
+}
+
+.no-group-selected {
+    text-align: center;
+    padding: 20px;
+    color: var(--SmartThemeEmColor);
+    font-style: italic;
+}
+
+/* 操作按钮 */
+.multi-api-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 配置编辑器 */
+.api-config-editor {
+    padding: 20px;
+    max-width: 600px;
+}
+
+.api-config-editor h3 {
+    margin: 0 0 20px 0;
+}
+
+.config-field {
+    margin-bottom: 15px;
+}
+
+.config-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.config-field input,
+.config-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 3px;
+    background: var(--SmartThemeBodyColor);
+}
+
+.config-field input[type="number"] {
+    width: 150px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .config-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .config-actions {
+        flex-direction: column;
+    }
+    
+    .character-mapping-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .character_api_mapping {
+        width: 100%;
+    }
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+    .api-config-item,
+    .character-mapping-item {
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .multi-api-toggle-block,
+    .multi-api-section {
+        background: rgba(255, 255, 255, 0.03);
+    }
+}

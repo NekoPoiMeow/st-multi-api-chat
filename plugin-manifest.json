@@ -1,0 +1,12 @@
+{
+    "display_name": "Multi-API Group Chat",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "homePage": "https://github.com/yourusername/st-multi-api-chat",
+    "auto_update": true
+}
